@@ -1,0 +1,19 @@
+{% extends "portfolio/styling.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<h2 class="text-center mt-5" id="blogdetailtitle">{{ a_blog.title }}</h2>
+
+<h4 class="text-center text-muted mb-5">-- {{ a_blog.date|date:"D d M Y"|upper }} --</h4>
+
+<h4>{{ a_blog.description|striptags }}
+  <br>
+  <br>
+  <br>
+  Regards, <br> E.B.
+</h4>
+
+
+{% endblock %}
